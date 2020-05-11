@@ -2,13 +2,37 @@
 <html>
 <head>
 	<title> Button Game</title>
+	<style type="text/css">
+		button
+		{
+			height: 80px;
+			width:  80px;
+			margin: 3em;
+			margin-top: 13em;
+		}
+		#b1
+		{
+			margin-left: 28em;
+		}
+		#b5
+		{
+			margin-left: 28em;
+		}
+	</style>
+
 </head>
 <body>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
+	
+	<button id="b1" >B1</button>
+	<button id="b2" onclick="setTimeout(fun(),5000);">B2</button>
+	<button id="b3" >B3</button>
+	<button id="b4" disabled >B4</button>
+	<br/>
+	<button id="b5" disabled >B5</button>
+	<button id="b6" disabled >B6</button>
+	<button id="b7" disabled >B7</button>
+	<button id="b8" disabled >B8</button>
 
+	<script type="text/javascript" src="back.js"></script>
 </body>
 </html>
