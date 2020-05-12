@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Button Game</title>
-</head>
-<body>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
-	<button>b1</button>
 
+<head>
+  <title> Button Game</title>
+
+</head>
+<style>
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .com{
+    display: flex;
+  flex-wrap: wrap;
+    border: solid red 2px; 
+    
+     }
+     .com > button {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+     .box1{
+      display: flex;
+  flex-wrap: wrap;
+       padding: 30px;
+
+     }
+     .box2{
+      display: flex;
+  flex-wrap: wrap;
+      
+      padding: 30px;
+     }
+</style>
+
+<body>
+  <div class="com">
+    <div class="box1">
+      <button class="button" style="vertical-align:middle"><span>B1 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B2 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B3 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B4 </span></button>
+    </div>
+    <div class="box2">
+      <button class="button" style="vertical-align:middle"><span>B5 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B6 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B7 </span></button>
+      <button class="button" style="vertical-align:middle"><span>B8 </span></button>
+
+    </div>
+  </div>
+
+  <script src="back.js"></script>
 </body>
+
 </html>
