@@ -25,13 +25,13 @@ for(var i=1;i<=9;i++)
     {
         vaal.disabled=false;
         document.getElementById(vaal).disabled=false;
-        document.getElementById(vaal).innerHTML="red";
+        document.getElementById(vaal).innerHTML="Click ME";
     }
     else{
         vaal.disabled=true;
         
         document.getElementById(vaal).disabled=true;
-        document.getElementById(vaal).innerHTML="white";
+        document.getElementById(vaal).innerHTML=""+i;
     }
 }
 document.getElementById("scorein").innerHTML=sc;
@@ -39,10 +39,6 @@ document.getElementById("scorein").innerHTML=sc;
 
 
 
-}
-function fun()
-{
-alert("your score is : "+sc)
 }
 //Define vars to hold time values
 let seconds = 10;
@@ -65,6 +61,26 @@ function stopWatch(){
     if(seconds === 0){
 
         document.getElementById("result").innerHTML=sc;
+        if(sc<7)
+        {
+            document.getElementById("t1").style.border = "thick solid #0000FF";
+        }
+        else if(sc>=7&&sc<=9)
+        {
+            document.getElementById("t2").style.border = "thick solid #0000FF";
+        }
+        else if(sc >=10&&sc<=12)
+        {
+            document.getElementById("t3").style.border = "thick solid #0000FF";
+        }
+        else if( sc==13 || sc== 14)
+        {
+            document.getElementById("t4").style.border = "thick solid #0000FF";
+        }
+        else
+        {
+            document.getElementById("t5").style.border = "thick solid #0000FF";
+        }
 startStop();
     }
 
