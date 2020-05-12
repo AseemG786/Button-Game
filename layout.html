@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
-    <style>
+    <style > 
       .tog{
           border: 2px solid red;
           padding: 4px;
@@ -32,11 +32,14 @@
       #resultin{
         border:2px solid red ;
       }
-      #start{
+      #startStop{
           margin-left: 18px;
       }
       output{
           margin-left: 68px;
+      }
+      #result{
+          border: 2px solid red;
       }
 
     </style>
@@ -44,10 +47,19 @@
 <link rel="stylesheet" href="styles.css">
 
 <script type="text/javascript" src="script.js"></script>
-
+<link rel="stylesheet" href="togel_btn.css">
 </head>
 <body>
-    <span id="tog1" class="tog">mouse</span> <span id="tog2" class="tog"> keybord</span>
+    <span id="tog1" class="tog">mouse</span> 
+    
+<label class="switch"> 
+    <input type="checkbox" value="Keybord">
+    <span class="slider">  </span>
+  </label>
+
+    <span id="tog2" class="tog"> keybord</span>
+    
+
     <span id="score">
         <!-- <h3> Score</h3> -->
         <strong>Score</strong>
@@ -60,7 +72,7 @@
         <button id="b1">1</button>
         <button id="b2">2</button>
         <button id="b3">3</button>  
-        <span id="result">  <strong>Clock</strong>
+        <span id="clock">  <strong>Clock</strong>
             <!-- <spam id="resultin" >  Your Score </spam> -->
             <span class="container">
 
@@ -79,7 +91,7 @@
         <button id="b6">6</button>   
         <span class="box" id="box1">
             <span> <strong> Result </strong> 
-                <span id="result"> Your Score </span>
+                <span id="result"> Your Score = 00 </span>
             </span>
         </span>
 
@@ -91,7 +103,9 @@
            <b> Gideline</b> 
         </span>
         <br>
-        <button id="start">  Start</button>
+        <span class="buttons">
+        <button  id="startStop" onclick="startStop()">  Start </button>
+         </span>
         <span>
             <output style="margin-left: 0px;" >Assem</output> <br>
             <output>Assem</output> <br>
