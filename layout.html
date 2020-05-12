@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+      .tog{
+          border: 2px solid red;
+          padding: 4px;
+          
+      }
+      #tog2{
+          margin-left: 4px;
+      }
+      #tog1{
+        margin-left: 4px;
+      }
+      #score{
+          margin-left: 70px;
+          display: inline;
+
+      }
+      #scorein{
+          border:2px solid red ;
+          padding: 4px;
+      }
+      .comtainer{
+          margin: 30px;
+          padding: 20px;
+      }
+      #resultin{
+        border:2px solid red ;
+      }
+      #start{
+          margin-left: 18px;
+      }
+      output{
+          margin-left: 68px;
+      }
+
+    </style>
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    <span id="tog1" class="tog">mouse</span> <span id="tog2" class="tog"> keybord</span>
+    <span id="score">
+        <!-- <h3> Score</h3> -->
+        <strong>Score</strong>
+        <span id="scorein">
+            your Score
+        </span>
+    </span>
+    <div class="comtainer" id="but">
+        <br>
+        <button id="b1">1</button>
+        <button id="b2">2</button>
+        <button id="b3">3</button>  
+        <span id="result">  <strong>Clock</strong>
+            <!-- <spam id="resultin" >  Your Score </spam> -->
+            <span class="container">
+
+                <span id="display">
+                    00
+                </span>
+            
+                <!-- <span class="buttons">
+                    <button id="startStop" onclick="startStop()">Start</button> <button id="reset" onclick="reset()">Reset</button>
+                </span> -->
+            
+            </span>
+        </span>     <br>
+        <button id="b4">4</button>
+        <button id="b5">5</button>
+        <button id="b6">6</button>   
+        <span class="box" id="box1">
+            <span> <strong> Result </strong> 
+                <span id="result"> Your Score </span>
+            </span>
+        </span>
+
+        <br>
+        <button id="b7">7</button>
+        <button id="b8">8</button>
+        <button id="b9">9</button>
+        <span>
+           <b> Gideline</b> 
+        </span>
+        <br>
+        <button id="start">  Start</button>
+        <span>
+            <output style="margin-left: 0px;" >Assem</output> <br>
+            <output>Assem</output> <br>
+            <output>Assem</output> <br>
+            <output>Assem</output> <br>
+            <output>Assem</output> <br>
+            <output>Assem</output> <br>
+            <output>Assem</output> <br>
+            
+        </span>
+    </div>
+    
+    
+</body>
+</html>
