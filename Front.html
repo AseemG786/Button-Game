@@ -3,11 +3,30 @@
 
 <head>
   <title> Button Game</title>
+  <title> Button Game</title>
+  <style >
+    button {
+      height: 80px;
+      width: 80px;
+      /* margin: 3em;
+      margin-top: 13em; */
+    }
+
+    #b1 {
+      margin-left: 28em;
+    }
+
+    #b5 {
+      margin-left: 28em;
+    }
+  </style>
 
 </head>
 <style>
   .button {
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
+    /* flex-wrap: nowrap; */
     border-radius: 4px;
     background-color: #f4511e;
     border: none;
@@ -45,48 +64,45 @@
     opacity: 1;
     right: 0;
   }
-  
-  .com{
-    display: flex;
-  flex-wrap: wrap;
-    border: solid red 2px; 
-    
-     }
-     .com > button {
-  background-color: #f1f1f1;
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
-}
-     .box1{
-      display: flex;
-  flex-wrap: wrap;
-       padding: 30px;
 
-     }
-     .box2{
-      display: flex;
-  flex-wrap: wrap;
-      
-      padding: 30px;
-     }
+  /* .com {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid red 2px;
+
+  }
+body{
+  display:block;
+}
+
+  .box1 {
+    display: flex;
+    flex-wrap: nowrap;
+
+
+  }
+
+  .box2 {
+    display: flex;
+    flex-wrap: nowrap;
+
+
+  } */
 </style>
 
 <body>
   <div class="com">
     <div class="box1">
-      <button class="button" style="vertical-align:middle"><span>B1 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B2 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B3 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B4 </span></button>
+      <button id="b1" class="button"><span>B1 </span></button>
+      <button id="b2" class="button"><span>B2 </span></button>
+      <button id="b3" class="button"><span>B3 </span></button>
+      <button id="b4" class="button"><span>B4 </span></button>
     </div>
     <div class="box2">
-      <button class="button" style="vertical-align:middle"><span>B5 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B6 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B7 </span></button>
-      <button class="button" style="vertical-align:middle"><span>B8 </span></button>
+      <button id="b5" class="button"><span>B5 </span></button>
+      <button id="b6" class="button"><span>B6 </span></button>
+      <button id="b7" class="button"><span>B7 </span></button>
+      <button id="b8" class="button"><span>B8 </span></button>
 
     </div>
   </div>
