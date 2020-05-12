@@ -7,7 +7,7 @@ sc++;
 
 var n=Math.random()*10;
 n=Math.floor(n);
-n=n*8/10;
+n=n*9/10;
 n=Math.floor(n);
 n++;
 c=n;
@@ -17,9 +17,24 @@ var id="b"+c;
 document. getElementById(atr). style. backgroundColor = '';
 document. getElementById(id). style. backgroundColor = 'Red';
 
-document.getElementById("tt").value=n;
-document.getElementById("score").value=sc;
-document.getElementById(id).innerHTML=n;
+for(var i=1;i<=9;i++)
+{
+
+    var vaal="b"+i;
+    if(vaal == id)
+    {
+        vaal.disabled=false;
+        document.getElementById(vaal).disabled=false;
+        document.getElementById(vaal).innerHTML="red";
+    }
+    else{
+        vaal.disabled=true;
+        
+        document.getElementById(vaal).disabled=true;
+        document.getElementById(vaal).innerHTML="white";
+    }
+}
+document.getElementById("scorein").innerHTML=sc;
 
 
 
@@ -48,6 +63,8 @@ function stopWatch(){
 
     //Logic to determine when to increment next value
     if(seconds === 0){
+
+        document.getElementById("result").innerHTML=sc;
 startStop();
     }
 
@@ -71,7 +88,7 @@ function startStop(){
 
         //Start the stopwatch (by calling the setInterval() function)
         interval = window.setInterval(stopWatch, 1000);
-        document.getElementById("startStop").innerHTML = "Stop";
+        document.getElementById("startStop").innerHTML = "Pause";    
         status = "started";
 
     }
@@ -82,7 +99,6 @@ function startStop(){
         status = "stopped";
 
     }
-
 }
 
 //Function to reset the stopwatch
