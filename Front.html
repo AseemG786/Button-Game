@@ -28,7 +28,7 @@
     display: block;
     /* flex-wrap: nowrap; */
     border-radius: 4px;
-    background-color: #f4511e;
+    /* background-color: #f4511e; */
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -91,23 +91,33 @@ body{
 </style>
 
 <body>
+  <input id="tt" type="text">
+	
+	<button id="click" onclick="setTimeout(fun(),10000);">Start</button>
+	
+	<input id="score" type="text">
+	<br/>
   <div class="com">
     <div class="box1">
-      <button id="b1" class="button"><span>B1 </span></button>
-      <button id="b2" class="button"><span>B2 </span></button>
-      <button id="b3" class="button"><span>B3 </span></button>
-      <button id="b4" class="button"><span>B4 </span></button>
+      <button id="b1"   onclick="callfun(id)" class="button"><span>B1 </span></button>
+      <button id="b2"   onclick="callfun(id)" class="button"><span>B2 </span></button>
+      <button id="b3"   onclick="callfun(id)" class="button"><span>B3 </span></button>
+      <button id="b4"   onclick="callfun(id)" class="button"><span>B4 </span></button>
     </div>
     <div class="box2">
-      <button id="b5" class="button"><span>B5 </span></button>
-      <button id="b6" class="button"><span>B6 </span></button>
-      <button id="b7" class="button"><span>B7 </span></button>
-      <button id="b8" class="button"><span>B8 </span></button>
+      <button id="b5"  onclick="callfun(id)"  class="button"><span>B5 </span></button>
+      <button id="b6"   onclick="callfun(id)" class="button"><span>B6 </span></button>
+      <button id="b7"  onclick="callfun(id)"  class="button"><span>B7 </span></button>
+      <button id="b8"  onclick="callfun(id)"  class="button"><span>B8 </span></button>
 
     </div>
   </div>
 
-  <script src="back.js"></script>
+  <!-- <script src="back.js"></script> -->
+
+	
+	
+	<script type="text/javascript" src="back.js"></script>
 </body>
 
 </html>
