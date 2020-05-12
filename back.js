@@ -57,7 +57,7 @@ function stopWatch(){
 
     seconds--;
 
-    //Logic to determine when to increment next value
+    //Logic to determine when to increment next valu
     if(seconds === 0){
 
         document.getElementById("result").innerHTML=sc;
