@@ -1,5 +1,5 @@
 //Define vars to hold time values
-let seconds = 0;
+let seconds = 10;
 let minutes = 0;
 let hours = 0;
 
@@ -17,18 +17,12 @@ let status = "stopped";
 //Stopwatch function (logic to determine when to increment next value, etc.)
 function stopWatch(){
 
-    seconds++;
+    seconds--;
 
     //Logic to determine when to increment next value
-    if(seconds / 60 === 1){
-        seconds = 0;
-        minutes++;
-
-        if(minutes / 60 === 1){
-            minutes = 0;
-            hours++;
-        }
-
+    if(seconds === 0){
+     
+startStop();
     }
 
     //If seconds/minutes/hours are only one digit, add a leading 0 to the value
@@ -39,22 +33,9 @@ function stopWatch(){
         displaySeconds = seconds;
     }
 
-    if(minutes < 10){
-        displayMinutes = "0" + minutes.toString();
-    }
-    else{
-        displayMinutes = minutes;
-    }
-
-    if(hours < 10){
-        displayHours = "0" + hours.toString();
-    }
-    else{
-        displayHours = hours;
-    }
 
     //Display updated time values to user
-    document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
+    document.getElementById("display").innerHTML =  displaySeconds;
 
 }
 
@@ -93,25 +74,4 @@ function reset(){
     document.getElementById("lap2").innerHTML = "Lap 2";
     document.getElementById("lap3").innerHTML = "Lap 3";
 
-}
-// to creat button
-
-//Function for Lap
-function lap(){
-
-    document.getElementById("lap1").innerHTML =seconds ;
-    // document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
- 
-}
-function lap2(){
-
-    document.getElementById("lap2").innerHTML =seconds ;
-    // document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
- 
-}
-function lap3(){
-
-    document.getElementById("lap3").innerHTML =seconds ;
-    // document.getElementById("display").innerHTML = displayHours + ":" + displayMinutes + ":" + displaySeconds;
- 
 }
