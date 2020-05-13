@@ -7,6 +7,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>layout</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+	
+	<script type="text/javascript" src="back.js"></script>
+<!-- ||||||| 9b8e488 -->
+	 <link rel="stylesheet" href="styles.css">
+
+    <script type="text/javascript" src="script.js"></script>
+	
+	<script type="text/javascript" src="back.js"></script>
+<!-- ======= -->
+	 	<script type="text/javascript" src="back.js"></script>
+
   <style > 
     .tog{
         border: 2px solid red;
@@ -172,12 +186,12 @@ body{
           <button id="b1"   onclick="callfun(id)" class="button"><span>B1 </span></button>
       <button id="b2"   onclick="callfun(id)" class="button"><span>B2 </span></button>
       <button id="b3"   onclick="callfun(id)" class="button"><span>B3 </span></button>  
-          <span id="clock" style="margin-left: 57px;">  <strong style="font-size: 60px;">Clock</strong>
+          <span id="clock" style="margin-left: 57px;font-size: 60px;">Clock</strong>
               <!-- <spam id="resultin" >  Your Score </spam> -->
               <span class="container">
   
                   <span id="display">
-                      00
+                      10
                   </span>
               
                   <!-- <span class="buttons">
@@ -208,20 +222,34 @@ body{
            </span>
           <span class="textbox" style="font-size: 30px;">
               <output style="margin-left: 0px;" >  </output> <br>
-              <output>Score less then 10 : Slow</output> <br>
-              <output>Score 11 - 12 : Medium</output> <br>
-              <output>Score 13 - 15 : Fast</output> <br>
-              <output>Score 16 - 17 : Ultimate</output> <br>
-              <output>Score above : 17 Out of the Planet</output> <br>
+              <output id="t1">Score less then 7 : Slow</output> <br>
+              <output id="t2">Score 8 - 9 : Medium</output> <br>
+              <output id="t3">Score 10 - 12 : Fast</output> <br>
+              <output id="t4">Score 13 - 14 : Ultimate</output> <br>
+              <output id="t5">Score above : 14 Out of the Planet</output> <br>
               
               
           </span>
       </span>
+      <button ><a href="layout.html"> Easy Mode </a> </button>
 
 
 
+<!-- <<<<<<< HEAD -->
   <!-- <script src="back.js"></script> -->
- 
+<!-- 
+    <div id="display">
+        10
+    </div>
+
+    <div class="buttons">
+        <button id="startStop" onclick="startStop()">Start</button> <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+</div>
+
+	 -->
+
 </body>
 
 </html>
